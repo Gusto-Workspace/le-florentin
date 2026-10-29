@@ -116,8 +116,8 @@ export default function Experience({ rootRef, lenisRef, menuOpen }) {
               { clipPath: 'ellipse(135% 135% at 50% 50%)', ease: 'power2.inOut', duration: 0.62 }, 0.31)
             .fromTo(q('.ritual-plate img'), { scale: 1.26, yPercent: 5 },
               { scale: 1, yPercent: 0, ease: 'none', duration: 0.67 }, 0.31)
-            .fromTo(q('.ritual-second'), { autoAlpha: 0, y: 56 },
-              { autoAlpha: 1, y: 0, ease: 'power2.out', duration: 0.2 }, 0.69)
+            .fromTo(q('.ritual-second'), { autoAlpha: 0, yPercent: 0 },
+              { autoAlpha: 1, yPercent: -50, ease: 'power2.out', duration: 0.2 }, 0.69)
             .to(q('.ritual-progress-fill'), { scaleX: 1, duration: 1, ease: 'none' }, 0);
         }
 

@@ -73,7 +73,7 @@
 .ritual-plate-portal{position:absolute;inset:0;z-index:2;clip-path:ellipse(0% 0% at 50% 50%);will-change:clip-path}
 .ritual-plate img{object-position:center 53%;filter:brightness(.84) saturate(.82)}
 .ritual-plate-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(3,13,13,.72),transparent 90%),linear-gradient(to top,rgba(3,13,13,.65),transparent 45%)}
-.ritual-copy{position:absolute;z-index:4;left:8%;top:calc(50% + 5svh);transform:translateY(-50%);max-width:77%;pointer-events:none}
+.ritual-copy{position:absolute;z-index:4;left:8%;top:calc(50% + 5svh);max-width:77%;pointer-events:none}
 .ritual-index{font-size:10px;letter-spacing:.28em;color:#dfbc97}
 .ritual-script{font:italic clamp(19px,2.4vw,34px) var(--serif);color:#e8c49d;margin:22px 0 15px}
 .ritual-copy h2{font:400 clamp(74px,10vw,170px)/.9 var(--serif);letter-spacing:-.06em;text-shadow:0 5px 50px rgba(0,0,0,.28)}
