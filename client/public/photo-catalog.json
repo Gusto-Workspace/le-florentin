@@ -1,0 +1,52 @@
+[
+  {
+    "file": "night-interior.jpg",
+    "id": 37307284,
+    "author": "Le Salama",
+    "source": "https://www.pexels.com/photo/elegant-fine-dining-restaurant-interior-37307284/",
+    "use": "01 intro ambiance",
+    "destination": "public/images/night-interior.jpg",
+    "direct_url": "https://images.pexels.com/photos/37307284/pexels-photo-37307284.jpeg?auto=compress&cs=tinysrgb&w=2000&fm=jpg",
+    "license": "Pexels License — usage commercial autorisé, restrictions usuelles: https://www.pexels.com/license/"
+  },
+  {
+    "file": "dark-plate.jpg",
+    "id": 34989159,
+    "author": "Szymon Shields",
+    "source": "https://www.pexels.com/photo/elegant-fine-dining-dish-under-soft-lighting-34989159/",
+    "use": "01 hero plat",
+    "destination": "public/images/dark-plate.jpg",
+    "direct_url": "https://images.pexels.com/photos/34989159/pexels-photo-34989159.jpeg?auto=compress&cs=tinysrgb&w=2000&fm=jpg",
+    "license": "Pexels License — usage commercial autorisé, restrictions usuelles: https://www.pexels.com/license/"
+  },
+  {
+    "file": "wine-pouring.jpg",
+    "id": 8775178,
+    "author": "Pavel Danilyuk",
+    "source": "https://www.pexels.com/photo/close-up-shot-of-a-red-wine-on-a-dining-table-8775178/",
+    "use": "01 cave",
+    "destination": "public/images/wine-pouring.jpg",
+    "direct_url": "https://images.pexels.com/photos/8775178/pexels-photo-8775178.jpeg?auto=compress&cs=tinysrgb&w=2000&fm=jpg",
+    "license": "Pexels License — usage commercial autorisé, restrictions usuelles: https://www.pexels.com/license/"
+  },
+  {
+    "file": "chef-hands.jpg",
+    "id": 30047126,
+    "author": "Pascal Gastaud",
+    "source": "https://www.pexels.com/photo/chef-preparing-gourmet-dish-in-professional-kitchen-30047126/",
+    "use": "01 cuisine",
+    "destination": "public/images/chef-hands.jpg",
+    "direct_url": "https://images.pexels.com/photos/30047126/pexels-photo-30047126.jpeg?auto=compress&cs=tinysrgb&w=2000&fm=jpg",
+    "license": "Pexels License — usage commercial autorisé, restrictions usuelles: https://www.pexels.com/license/"
+  },
+  {
+    "file": "warm-room.jpg",
+    "id": 14590691,
+    "author": "Jonathan Borba",
+    "source": "https://www.pexels.com/photo/interior-of-restaurant-14590691/",
+    "use": "02 ambiance",
+    "destination": "public/images/warm-room.jpg",
+    "direct_url": "https://images.pexels.com/photos/14590691/pexels-photo-14590691.jpeg?auto=compress&cs=tinysrgb&w=2000&fm=jpg",
+    "license": "Pexels License — usage commercial autorisé, restrictions usuelles: https://www.pexels.com/license/"
+  }
+]

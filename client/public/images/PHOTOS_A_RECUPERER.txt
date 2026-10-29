@@ -1,0 +1,4 @@
+Les 5 JPEG ne sont pas inclus dans ce ZIP (téléchargement bloqué pendant la création).
+Commande dans la racine du projet sur le Mac :
+python3 scripts/download_photos.py
+Le script vérifie chaque JPEG et affiche le lien source si un téléchargement échoue.

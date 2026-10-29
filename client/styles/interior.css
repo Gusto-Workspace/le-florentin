@@ -1,0 +1,278 @@
+/* PHASE C — Les Heures Dorées. Pages intérieures uniquement : la homepage V2.5 demeure inchangée. */
+.interior-page{--ip-dark:#091718;--ip-deep:#0e2424;--ip-cream:#e9dbc6;--ip-paper:#f2e6d4;--ip-bronze:#c6a17c;--ip-ink:#192b29;min-width:0;background:var(--ip-dark);color:var(--ip-paper);overflow-x:clip}
+.interior-page a,.interior-page button,.interior-page input,.interior-page textarea,.interior-page select{transition:border-color .2s ease,color .2s ease,background-color .2s ease}
+.interior-page h1,.interior-page h2,.interior-page h3{font-family:var(--serif);font-weight:400;letter-spacing:-.055em;line-height:.98}
+.interior-page h1 em,.interior-page h2 em,.interior-page h3 em{font-weight:400;color:var(--ip-bronze)}
+.interior-page .interior-eyebrow{font-family:var(--sans);font-size:10px;letter-spacing:.23em;text-transform:uppercase;line-height:1.7;font-weight:400}
+.interior-page button:disabled{opacity:.45;cursor:not-allowed}
+.interior-hero{min-height:690px;min-height:92svh;position:relative;overflow:hidden;padding:clamp(155px,18vh,215px) clamp(24px,7vw,130px) 90px;isolation:isolate}
+.interior-hero-overline{font-size:10px;letter-spacing:.28em;color:#d8bf9b;margin-bottom:5vh}.interior-hero-overline span{padding:0 15px}
+.interior-editorial-heading{position:relative;z-index:2;max-width:1300px;margin:auto}
+.interior-editorial-heading .interior-eyebrow{color:#d3b795;margin-bottom:clamp(18px,4vh,42px)}
+.interior-editorial-heading h1{font-size:clamp(76px,10.6vw,195px);line-height:.83;max-width:1350px}
+.interior-editorial-heading h1 em{display:block;font-style:italic;padding-left:clamp(25px,12vw,205px);white-space:normal}
+.interior-editorial-heading .interior-subtitle{font-family:var(--serif);font-size:clamp(20px,2.15vw,34px);line-height:1.4;max-width:460px;margin-top:clamp(24px,5vh,64px);color:#dccfbc}
+.interior-editorial-heading.is-light .interior-eyebrow{color:#886c55}.interior-editorial-heading.is-light h1{color:#1b2926}.interior-editorial-heading.is-light h1 em{color:#a27856}.interior-editorial-heading.is-light .interior-subtitle{color:#685745}
+.interior-count{font:12px var(--sans);color:#9b8066;letter-spacing:.08em}
+.interior-catalog-state{font-family:var(--serif);font-size:clamp(20px,2vw,28px);line-height:1.35;color:#806c57;padding:38px 0}.interior-catalog-state.interior-error{color:#9d4c43}
+.interior-primary-link,.interior-primary-button{display:inline-flex;align-items:center;justify-content:space-between;gap:32px;background:#b99573;color:#102321;padding:22px 30px;border:1px solid #b99573;font:10px/1.3 var(--sans);letter-spacing:.17em;text-transform:uppercase;min-height:65px;cursor:pointer}
+.interior-primary-link:hover,.interior-primary-button:hover:not(:disabled){background:#d1af89;color:#0a1b1a}
+.interior-primary-link span,.interior-primary-button span{font-size:22px;line-height:0;font-weight:200}
+.interior-text-link{font:10px var(--sans);letter-spacing:.18em;text-decoration:underline;text-underline-offset:8px}
+.interior-footer{background:#071213;color:#f1e4d1;padding:clamp(40px,7vw,100px) clamp(24px,6vw,120px) 22px;border-top:1px solid rgba(213,185,145,.2)}
+.interior-footer-top{display:flex;align-items:end;justify-content:space-between;gap:25px;padding-bottom:50px;border-bottom:1px solid rgba(231,205,169,.24)}
+.interior-footer-top p{font:clamp(50px,7vw,116px)/.9 var(--serif);letter-spacing:-.07em}.interior-footer-top>span{font-size:10px;letter-spacing:.19em;color:#b6a18b}.interior-footer-top a{font-size:11px;letter-spacing:.11em;border-bottom:1px solid #ab8d6b;padding-bottom:10px}.interior-footer-top a span{margin-left:9px}
+.interior-footer nav{display:flex;flex-wrap:wrap;gap:19px 48px;padding:34px 0 70px;font:11px var(--sans);letter-spacing:.08em;color:#cab69d}
+.interior-footer nav a:hover{color:#fff}.interior-footer nav a[aria-current=page]{color:#f6e7d0;text-decoration:underline;text-underline-offset:7px}
+.interior-footer-bottom{display:flex;gap:18px;justify-content:space-between;flex-wrap:wrap;color:#9a8b76;font:9px var(--sans);letter-spacing:.14em}
+/* LA CARTE — dramatic opening, quiet typography in the paper catalogue. */
+.menu-page-hero{min-height:760px;min-height:97svh;background:radial-gradient(ellipse at 75% 38%,#273331,#0b1718 66%)}
+.menu-page-hero .interior-editorial-heading{z-index:3}
+.menu-page-hero h1{font-size:clamp(82px,11vw,200px);max-width:1150px}.menu-page-hero h1 em{padding-left:12vw}
+.menu-hero-photo{position:absolute;right:0;top:0;width:47%;height:100%;z-index:1;overflow:hidden;clip-path:polygon(18% 0,100% 0,100% 100%,0 100%)}
+.menu-hero-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#0b1718 0%,rgba(11,23,24,.43) 23%,rgba(11,23,24,.08) 74%),linear-gradient(0deg,rgba(8,18,20,.65),transparent 42%)}
+.menu-page-hero .interior-subtitle{max-width:370px}
+.menu-hero-bottom{position:absolute;left:7vw;right:7vw;bottom:35px;z-index:2;display:flex;justify-content:space-between;font:9px var(--sans);letter-spacing:.2em;color:#bd9c75}
+.menu-reading-area{background:var(--ip-cream);color:var(--ip-ink);padding:100px clamp(24px,7vw,120px) 160px}
+.menu-reading-intro{display:flex;align-items:end;justify-content:space-between;gap:45px;padding-bottom:90px;border-bottom:1px solid rgba(37,48,43,.27)}
+.menu-reading-intro h2{font-size:clamp(61px,7.4vw,130px);margin-top:25px}.menu-reading-intro h2 em{color:#a57855}
+.menu-reading-intro>p{max-width:350px;color:#6a6153;font:clamp(18px,1.6vw,24px)/1.52 var(--serif)}
+.menu-experiences{padding:85px 0 100px}.menu-experiences-heading{display:flex;align-items:end;justify-content:space-between;gap:18px;margin-bottom:30px}.menu-experiences-heading h2{font-size:clamp(50px,5vw,85px)}.menu-experiences-heading h2 em{color:#a27856}
+.menu-experiences-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr));gap:1px;background:rgba(25,43,41,.24);border:1px solid rgba(25,43,41,.24)}
+.menu-experience{background:#e8d9c4;padding:44px 40px 56px;min-width:0}.menu-experience-top{display:flex;justify-content:space-between;gap:15px;align-items:baseline;font:10px var(--sans);letter-spacing:.08em;color:#74624d}.menu-experience h3{font-size:clamp(40px,4vw,65px);margin:45px 0 14px;overflow-wrap:anywhere}.menu-experience-sub{font:italic 21px var(--serif);color:#a27856}.menu-experience-description{font:18px/1.5 var(--serif);color:#5c584e;margin-top:26px;max-width:440px}.menu-experience ul{padding:22px 0 0 18px;font:14px/1.9 var(--serif);color:#615a50}
+.menu-reading-layout{display:grid;grid-template-columns:minmax(155px,23%) minmax(0,1fr);gap:clamp(35px,6vw,105px)}
+.menu-side-index{position:sticky;top:130px;align-self:start;padding-top:16px}
+.menu-side-index>p{font:10px var(--sans);letter-spacing:.24em;margin-bottom:28px;color:#84705a}.menu-side-index>a{display:flex;gap:17px;padding:17px 0;border-bottom:1px solid rgba(27,42,41,.2);font:clamp(15px,1.4vw,20px) var(--serif)}.menu-side-index>a:hover{color:#a77c58}.menu-side-index>a span{font:9px var(--sans);color:#987b60;align-self:center}
+.menu-side-ornament{font:clamp(100px,13vw,220px)/1 var(--serif);color:rgba(27,42,41,.08);padding-top:30px}
+.menu-category{scroll-margin-top:112px;padding:38px 0 95px;border-top:1px solid rgba(27,42,41,.25)}.menu-category:first-child{border-top:0;padding-top:0}
+.menu-category-title{display:grid;grid-template-columns:60px 1fr;gap:10px;margin-bottom:53px}.menu-category-title h2{font-size:clamp(48px,5.4vw,95px);overflow-wrap:anywhere;max-width:880px;margin-top:12px}.menu-category-title .interior-eyebrow{color:#997554}
+.catalog-dish{display:grid;grid-template-columns:46px minmax(0,1fr) auto;align-items:baseline;gap:15px;border-top:1px solid rgba(27,42,41,.17);padding:28px 0 31px}.catalog-dish:last-child{border-bottom:1px solid rgba(27,42,41,.17)}.catalog-dish-index{font:10px var(--sans);color:#9b8068}.catalog-dish-details h3{font-size:clamp(28px,2.7vw,44px);letter-spacing:-.035em;line-height:1.14}.catalog-dish-details p{font:17px/1.5 var(--serif);color:#60594d;margin-top:10px;max-width:610px}.catalog-dish-price{font:18px var(--serif);white-space:nowrap;margin-left:15px}.price-on-request{font-size:12px;color:#796958}.catalog-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:9px}.catalog-tags span{font:8px var(--sans);text-transform:uppercase;letter-spacing:.13em;border:1px solid #c6af92;padding:5px 7px}
+.catalog-subgroup{margin:32px 0 55px}.catalog-subhead{display:flex;justify-content:space-between;gap:16px;align-items:baseline;padding:0 0 20px}.catalog-subhead h3{font-size:clamp(30px,3vw,46px);color:#957355}.catalog-subhead p{font:16px var(--serif);color:#7b7162}
+.interior-outro{position:relative;min-height:680px;display:grid;grid-template-columns:1fr 1fr;background:#122322}.outro-photo{position:relative;min-height:560px;overflow:hidden}.outro-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent,#122322 100%)}.outro-copy{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:45px;padding:80px clamp(28px,6vw,90px)}.outro-copy h2{font-size:clamp(60px,6vw,110px)}
+/* CARTES CADEAUX — cream stationery, layered metallic gift. */
+.interior-gift-cards{background:var(--ip-cream);color:var(--ip-ink)}
+.gift-page-hero{min-height:720px;min-height:95svh;background:var(--ip-cream);color:#1b2926;display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center;padding-bottom:80px}
+.gift-page-hero .interior-editorial-heading{min-width:0;width:100%}.gift-page-hero h1{font-size:clamp(78px,9.4vw,167px)}.gift-page-hero h1 em{padding-left:5vw}.gift-page-hero .interior-subtitle{max-width:440px}
+.gift-hero-composition{position:relative;display:grid;place-items:center;min-height:490px;perspective:1000px;z-index:1}
+.gift-hero-composition:before{content:"";position:absolute;inset:10% -10%;border-radius:50%;background:radial-gradient(ellipse,#b08a6a55,transparent 65%);filter:blur(14px)}
+.gift-hero-card{position:relative;background:linear-gradient(142deg,#0c1d1d,#172b29 54%,#081718);width:min(100%,570px);aspect-ratio:1.48;transform:rotate(-7deg);box-shadow:18px 36px 55px rgba(38,31,24,.24),inset 0 0 0 1px #b99a72;outline:1px solid rgba(190,159,122,.6);outline-offset:-17px;padding:clamp(35px,4vw,63px);display:flex;flex-direction:column;justify-content:space-between;color:#e8d5be}
+.gift-hero-card>span,.gift-hero-card small{font:9px var(--sans);letter-spacing:.23em}.gift-hero-card strong{font:clamp(37px,4.1vw,74px)/.95 var(--serif);letter-spacing:-.07em}.gift-hero-card strong em{color:#c19a75}.gift-hero-script{position:absolute;bottom:-7px;right:-15px;font:italic clamp(36px,5vw,80px) var(--serif);color:#ad805e;transform:rotate(-5deg)}
+.gift-selection-section{padding:100px clamp(24px,7vw,130px) 140px;background:#efe4d3}
+.gift-intro{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:end;padding-bottom:80px;border-bottom:1px solid #b9a68e}.gift-intro h2{font-size:clamp(70px,8.5vw,145px);margin-top:22px}.gift-intro h2 em{color:#a87c59}.gift-intro>p{font:clamp(18px,1.9vw,28px)/1.45 var(--serif);color:#6c5c4c;max-width:430px;justify-self:end}
+.gift-group{padding:72px 0;border-bottom:1px solid #b9a68e}.gift-group-heading{display:flex;align-items:start;gap:36px;margin-bottom:42px}.gift-group-heading h3{font-size:clamp(46px,5vw,82px);margin-top:10px}.gift-offer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:15px}
+.gift-offer{display:flex;flex-direction:column;align-items:stretch;text-align:left;min-width:0;min-height:290px;border:1px solid #b7a68f;background:#e9dac7;color:#20302d;padding:26px 29px;cursor:pointer}
+.gift-offer:hover,.gift-offer-selected{background:#142827;color:#eaddc9;border-color:#142827}.gift-offer-selected .gift-offer-desc{color:#bfae96}
+.gift-offer-top,.gift-offer-bottom{display:flex;justify-content:space-between;gap:16px;align-items:baseline;font:9px var(--sans);letter-spacing:.19em}.gift-offer-name{font:clamp(33px,3.2vw,55px)/1.03 var(--serif);letter-spacing:-.055em;margin:32px 0 18px;overflow-wrap:anywhere}.gift-offer-desc{font:17px/1.38 var(--serif);color:#6d6050;max-width:370px}.gift-offer-bottom{margin-top:auto;padding-top:30px}.gift-offer-bottom strong{font:25px var(--serif);letter-spacing:0}.gift-offer-bottom span{white-space:nowrap}
+.gift-customization{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,7vw,120px);padding-top:110px}.gift-customization h2{font-size:clamp(65px,6.4vw,115px);margin:20px 0 35px}.gift-customization-heading>p:last-child{font:20px/1.5 var(--serif);max-width:390px;color:#77675a}
+.gift-customization-form,.contact-compose form{display:flex;flex-direction:column;gap:12px}.gift-customization-form label,.contact-compose label,.reservation-form-panel label{font:10px/1.6 var(--sans);letter-spacing:.14em;text-transform:uppercase;display:flex;flex-direction:column;gap:10px}
+.gift-customization-form input,.gift-customization-form textarea,.contact-compose input,.contact-compose textarea,.reservation-form-panel input,.reservation-form-panel textarea,.reservation-form-panel select{border:0;border-bottom:1px solid #b6a38b;background:transparent;color:#1a2927;font:18px/1.4 var(--serif);letter-spacing:0;padding:14px 0 17px;width:100%;border-radius:0;outline-offset:2px}
+.gift-customization-form textarea,.contact-compose textarea,.reservation-form-panel textarea{resize:vertical;min-height:100px}
+.gift-customization-form .interior-primary-button{margin-top:22px}.gift-hint{font:13px var(--serif);color:#665b4d}.gift-summary{margin-top:55px;background:#162725;color:#f0dfc8;padding:clamp(28px,5vw,65px)}.gift-summary h3{font-size:clamp(40px,5vw,80px);margin:20px 0}.gift-summary p{font:18px/1.6 var(--serif)}.gift-summary blockquote{font:italic 26px/1.4 var(--serif);padding-top:20px}.gift-summary .gift-summary-caution{font:12px/1.6 var(--sans);margin-top:30px;color:#e4c5a2}
+.gift-ending{background:#1a2a27;color:#eedfcb;padding:85px 7vw;display:flex;justify-content:space-between;align-items:end;gap:30px}.gift-ending p{font:clamp(45px,5.4vw,90px)/1.06 var(--serif)}.gift-ending p em{color:#b89570}.gift-ending>a{font:10px var(--sans);letter-spacing:.13em;white-space:nowrap;border-bottom:1px solid #b89570;padding-bottom:12px}
+/* RÉSERVATIONS — spatial photograph and precise form, no false availability. */
+.reservation-hero{min-height:680px;min-height:90svh;display:flex;align-items:end;padding-bottom:110px}
+.reservation-hero-photo{position:absolute;inset:0;z-index:0}.reservation-hero-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#0a191ae8 0%,#0a191abd 45%,#0a191a55 100%),linear-gradient(0deg,#071415ba,transparent 55%)}
+.reservation-hero-text{position:relative;z-index:1;width:100%}.reservation-hero h1{font-size:clamp(78px,10vw,180px)}
+
+.reservation-booking{background:#e9dbc7;color:#1a2925;display:grid;grid-template-columns:1fr 1.12fr;gap:clamp(35px,7vw,125px);padding:clamp(65px,8vw,140px) clamp(24px,7vw,130px)}
+.reservation-editorial h2{font-size:clamp(70px,7.7vw,140px);margin:20px 0 40px}.reservation-editorial h2 em{color:#9a7351}.reservation-editorial>p{font:21px/1.55 var(--serif);color:#6d5a4a;max-width:420px}
+.reservation-side-photo{position:relative;aspect-ratio:.85;width:min(100%,390px);margin-top:75px;overflow:hidden}.reservation-side-photo:after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 1px #ffffff50}
+.reservation-form-panel{border-top:1px solid #ad9275;padding-top:27px}.reservation-panel-top{display:flex;justify-content:space-between;gap:15px;font:10px var(--sans);letter-spacing:.2em;color:#77624d}
+.reservation-form-section{padding:42px 0;border-bottom:1px solid #b5a089;display:flex;flex-direction:column;gap:25px}.reservation-form-section h3{font-size:clamp(39px,3.7vw,59px);margin-bottom:9px}
+.reservation-service-options{display:grid;grid-template-columns:1fr 1fr;gap:12px}.reservation-service-options button{border:1px solid #ae9679;background:transparent;text-align:left;padding:22px;min-width:0;color:#23322e}.reservation-service-options button.selected{background:#172c29;color:#f2e4cf}.reservation-service-options button span{display:block;font:28px var(--serif)}.reservation-service-options button small{font:10px/1.5 var(--sans);letter-spacing:.08em;color:inherit;opacity:.7}
+.reservation-form-grid{display:grid;grid-template-columns:1fr 1fr;gap:23px}.reservation-form-panel input,.reservation-form-panel textarea,.reservation-form-panel select{min-height:48px}.reservation-form-panel select{cursor:pointer}.reservation-form-panel .interior-primary-button{margin-top:35px;width:100%}.reservation-privacy{font:12px/1.5 var(--serif);color:#7f6956;margin-top:15px}.reservation-review{background:#192d29;color:#efe1ce;padding:40px;margin-top:35px}.reservation-review h3{font-size:44px;margin:17px 0 30px}.reservation-review dl>div{display:flex;justify-content:space-between;gap:20px;border-bottom:1px solid #d9c39a50;padding:13px 0}.reservation-review dt{color:#c2a787}.reservation-review dd{margin:0;text-align:right}.reservation-review>strong{display:block;font:12px var(--sans);letter-spacing:.1em;color:#eac5a1;margin:30px 0 12px}.reservation-review>p{font:16px/1.5 var(--serif);margin-bottom:25px}
+/* CONTACT — luminous Moissac, verified address, mailto composition. */
+.interior-contact{background:var(--ip-cream);color:#1b2c28}.contact-hero{min-height:680px;min-height:94svh;display:grid;grid-template-columns:1.07fr .93fr;gap:40px;align-items:center;background:#e9dbc7}
+.contact-hero .interior-editorial-heading h1{font-size:clamp(80px,10.1vw,180px)}.contact-hero .interior-editorial-heading h1 em{padding-left:8vw}
+.contact-photo{position:relative;align-self:stretch;min-height:420px;max-height:790px;overflow:hidden;clip-path:inset(2% 0 3% 0 round 250px 250px 0 0)}
+.contact-information{background:#eddfca;padding:115px clamp(24px,7vw,130px);display:grid;grid-template-columns:40% 1fr;gap:clamp(45px,7vw,120px)}
+.contact-lead h2{font-size:clamp(70px,7.1vw,130px);margin:20px 0 36px}.contact-lead h2 em{color:#9a7351}.contact-lead>p{font:21px/1.5 var(--serif);color:#665a4b;max-width:375px}
+.contact-info-grid{display:grid;grid-template-columns:1fr 1fr;gap:65px 44px}.contact-info-grid>div{border-top:1px solid #b7a188;padding-top:20px;min-width:0}.contact-info-number{font:11px var(--sans);color:#a37e5d}.contact-info-grid .interior-eyebrow{margin:25px 0 17px;color:#886e54}.contact-info-grid address{font:clamp(24px,2.3vw,40px)/1.25 var(--serif);font-style:normal}.contact-info-grid a{overflow-wrap:anywhere}.contact-info-grid>div>a:not(.contact-hero-phone):not(.contact-hero-mail){display:inline-block;border-bottom:1px solid #a27e5c;font:10px/1.7 var(--sans);letter-spacing:.14em;margin-top:22px;padding-bottom:8px}.contact-hero-phone{font:clamp(24px,2.2vw,34px) var(--serif)}.contact-hero-mail{font:clamp(18px,1.7vw,26px)/1.4 var(--serif)}.contact-info-grid>div>p:not(.interior-eyebrow){font:17px/1.52 var(--serif);margin-top:15px;color:#66594d}
+.contact-compose{background:#142622;color:#e9dac4;padding:clamp(75px,8vw,140px) clamp(24px,7vw,130px);display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,8vw,135px)}
+.contact-compose h2{font-size:clamp(75px,7vw,130px);margin:20px 0 35px}.contact-compose h2 em{color:#bc9570}.contact-compose>div>p:last-child{font:21px/1.5 var(--serif);color:#c8b7a2;max-width:400px}
+.contact-compose input,.contact-compose textarea{color:#f2e5d3;border-color:#8d7e67}.contact-compose .interior-primary-button{margin-top:25px}.contact-compose form{gap:20px}.contact-mail-notice{font:13px/1.5 var(--serif);color:#c5b39e}
+.contact-closing{background:#e9dbc7;padding:90px clamp(24px,7vw,130px);display:flex;align-items:end;justify-content:space-between;gap:30px}.contact-closing p{font:clamp(61px,6.2vw,120px)/1 var(--serif)}.contact-closing p em{color:#a17b58}.contact-closing>a{font:11px var(--sans);letter-spacing:.17em;border-bottom:1px solid;padding-bottom:12px;white-space:nowrap}
+/* Tablet & phone — intentional reflow, never only shrinking typography. */
+@media(max-width:1100px){.gift-page-hero{grid-template-columns:1fr}.gift-hero-composition{min-height:365px;max-width:660px;width:100%;margin:auto}.gift-hero-card{width:min(80%,520px)}.contact-hero{grid-template-columns:1fr 42%;gap:20px}.contact-information{grid-template-columns:1fr;gap:55px}.contact-lead{max-width:650px}.reservation-booking{gap:50px}.interior-footer-top{flex-wrap:wrap}}
+@media(max-width:760px){
+ .interior-page{overflow-x:clip}.interior-hero{padding:132px 24px 70px;min-height:620px;min-height:86svh}
+ .interior-editorial-heading .interior-eyebrow{margin-bottom:35px}.interior-editorial-heading h1{font-size:clamp(69px,14vw,112px)}.interior-editorial-heading h1 em{padding-left:4vw}.interior-editorial-heading .interior-subtitle{font-size:21px;max-width:320px;margin-top:38px}
+ 
+ .menu-page-hero{display:flex;flex-direction:column;justify-content:center}.menu-hero-photo{width:100%;height:65%;top:35%;clip-path:none;opacity:.48}.menu-hero-photo:after{background:linear-gradient(0deg,#0b1718aa,#0b1718 94%)}.menu-page-hero .interior-editorial-heading{width:100%;align-self:center}
+ .menu-hero-bottom{left:24px;right:24px}.menu-reading-area{padding:70px 24px 100px}.menu-reading-intro{display:block;padding-bottom:55px}.menu-reading-intro h2{font-size:clamp(57px,10vw,88px)}.menu-reading-intro>p{margin-top:36px}
+ .menu-experiences{padding:65px 0}.menu-experiences-heading{display:block}.menu-experiences-heading h2{margin-top:15px}.menu-experience{padding:34px 26px;min-height:320px}
+ .menu-reading-layout{display:block}.menu-side-index{position:relative;top:auto;display:flex;overflow-x:auto;flex-wrap:nowrap;align-items:center;gap:25px;padding:10px 0 25px;margin-bottom:45px;scrollbar-width:thin}.menu-side-index>a{flex:none;white-space:nowrap;gap:8px}.menu-side-index>p,.menu-side-ornament{display:none}
+ .menu-category{padding:35px 0 65px;scroll-margin-top:90px}.menu-category-title{grid-template-columns:34px 1fr;gap:8px;margin-bottom:35px}.menu-category-title h2{font-size:clamp(45px,9vw,72px)}
+ .catalog-dish{grid-template-columns:22px minmax(0,1fr);gap:10px;padding:25px 0}.catalog-dish-price{grid-column:2;margin-left:0;padding-top:8px}.catalog-dish-details h3{font-size:clamp(27px,6.3vw,38px)}.catalog-dish-details p{font-size:16px}
+ .interior-outro{grid-template-columns:1fr}.outro-photo{min-height:400px;max-height:510px}.outro-photo:after{background:linear-gradient(0deg,#122322,transparent 60%)}.outro-copy{padding:50px 24px 90px}.outro-copy h2{font-size:clamp(54px,10vw,80px)}
+ .gift-page-hero{display:flex;flex-direction:column;justify-content:center;align-items:stretch;min-height:790px;gap:50px}.gift-page-hero .interior-editorial-heading h1{font-size:clamp(75px,14vw,108px)}.gift-hero-composition{min-height:290px}.gift-hero-card{width:86%;padding:33px}.gift-hero-card strong{font-size:clamp(37px,7vw,62px)}.gift-hero-script{font-size:45px;bottom:-15px;right:5px}
+ .gift-selection-section{padding:75px 24px 110px}.gift-intro{display:block}.gift-intro h2{font-size:clamp(62px,11vw,100px)}.gift-intro>p{max-width:440px;margin-top:27px}.gift-group-heading{gap:16px}.gift-group-heading h3{font-size:clamp(44px,9vw,72px)}.gift-customization{grid-template-columns:1fr;padding-top:80px}.gift-ending{display:block;padding:70px 24px}.gift-ending>a{display:inline-block;margin-top:35px}
+ .reservation-hero{min-height:620px}.reservation-booking{grid-template-columns:1fr;padding:85px 24px;gap:70px}.reservation-side-photo{display:none}.reservation-editorial h2{font-size:clamp(63px,11vw,98px)}.reservation-editorial>p{max-width:600px}.reservation-form-grid{grid-template-columns:1fr 1fr}
+ .contact-hero{display:block;min-height:820px;padding-bottom:0}.contact-photo{position:relative;max-height:380px;height:40svh;margin-top:42px;clip-path:inset(0 0 0 0 round 200px 200px 0 0)}.contact-hero .interior-editorial-heading h1{font-size:clamp(75px,13vw,115px)}.contact-information{padding:80px 24px}.contact-info-grid{gap:48px 22px}.contact-lead h2{font-size:clamp(66px,12vw,106px)}.contact-compose{grid-template-columns:1fr;padding:85px 24px}.contact-closing{padding:75px 24px;display:block}.contact-closing>a{display:inline-block;margin-top:40px}
+ .interior-footer{padding:65px 24px 22px}.interior-footer-top{display:block}.interior-footer-top p{font-size:70px}.interior-footer-top>span{display:block;margin:26px 0}.interior-footer-top>a{display:inline-block}.interior-footer nav{padding-bottom:55px;gap:20px 32px}
+}
+@media(max-width:420px){
+ .interior-hero{padding-left:18px;padding-right:18px}.interior-editorial-heading h1{font-size:clamp(62px,15vw,86px)}
+ .menu-page-hero h1{font-size:clamp(70px,15.5vw,93px)}.menu-page-hero h1 em{padding-left:0}.menu-hero-bottom{left:18px;right:18px}
+ .gift-hero-card{width:100%;padding:26px}.gift-hero-card strong{font-size:36px}.gift-hero-script{font-size:36px}.gift-hero-composition{min-height:260px}
+ .gift-offer{min-height:270px}.gift-offer-grid{grid-template-columns:1fr}.gift-offer-bottom{gap:6px}.gift-offer-bottom span{font-size:8px}
+ .reservation-form-grid,.contact-info-grid{grid-template-columns:1fr}.reservation-service-options button{padding:16px}.reservation-service-options button span{font-size:25px}.reservation-review{padding:25px}.contact-hero .interior-editorial-heading h1{font-size:clamp(68px,15vw,88px)}.contact-info-grid{gap:28px}
+}
+@media(prefers-reduced-motion:reduce){.interior-page *, .interior-page *::before,.interior-page *::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+
+
+/* V3.1 — refined interior heroes only; no homepage or navigation animation changes. */
+.interior-hero .interior-editorial-heading .interior-eyebrow,
+.interior-hero .interior-editorial-heading h1,
+.interior-hero .interior-editorial-heading .interior-subtitle,
+.interior-hero .interior-hero-action{animation:florentin-copy-in .83s cubic-bezier(.23,1,.32,1) both;}
+.interior-hero .interior-editorial-heading h1{animation-delay:.10s}
+.interior-hero .interior-editorial-heading .interior-subtitle{animation-delay:.24s}
+.interior-hero .interior-hero-action{animation-delay:.34s}
+.interior-hero .menu-hero-photo,.interior-hero .gift-hero-composition,
+.interior-hero .reservation-hero-photo,.interior-hero .contact-photo{
+ animation:florentin-image-in 1.15s cubic-bezier(.23,1,.32,1) both;
+ transform-origin:50% 52%;
+}
+@keyframes florentin-copy-in{
+ from{opacity:0;transform:translate3d(0,19px,0)}
+ to{opacity:1;transform:translate3d(0,0,0)}
+}
+@keyframes florentin-image-in{
+ from{opacity:0;transform:translate3d(0,17px,0) scale(1.025)}
+ to{opacity:1;transform:translate3d(0,0,0) scale(1)}
+}
+/* Compact, subordinate disclosure, not a demonstration banner. */
+.interior-data-disclaimer{font:10px/1.6 var(--sans);letter-spacing:.09em;color:#776452;margin:22px 0 28px;opacity:.82;}
+/* gift: a composed invitation, not tilted lettering or a displaced signature. */
+.gift-page-hero{grid-template-columns:minmax(0,1.03fr) minmax(0,.97fr);gap:clamp(30px,5vw,90px);padding-top:clamp(150px,17vh,215px);padding-bottom:clamp(70px,9vh,120px);min-height:740px;min-height:91svh;}
+.gift-page-hero .interior-editorial-heading{margin:0;max-width:680px}
+.gift-page-hero .interior-editorial-heading h1{font-size:clamp(79px,8.3vw,154px);line-height:.91;letter-spacing:-.055em;overflow-wrap:normal}
+.gift-page-hero .interior-editorial-heading h1 em{padding-left:0;font-size:.87em;}
+.gift-page-hero .interior-subtitle{margin-top:clamp(28px,4.8vh,55px);max-width:380px}
+.gift-hero-composition{min-width:0;min-height:clamp(330px,34vw,510px);perspective:none;isolation:isolate}
+.gift-hero-composition::before{inset:3% 0;border-radius:0;background:radial-gradient(ellipse at 52% 56%,rgba(166,119,76,.23),transparent 68%);filter:blur(10px)}
+.gift-hero-card{z-index:2;transform:none;width:min(100%,530px);aspect-ratio:1.48;min-height:305px;box-shadow:0 33px 65px rgba(48,36,27,.16),inset 0 0 0 1px #b99a72;outline-offset:-16px;padding:clamp(33px,3.4vw,52px)}
+.gift-hero-card>span{display:flex;align-items:center;justify-content:space-between;gap:10px;white-space:nowrap}
+.gift-hero-card>span i{flex:1;height:1px;max-width:65px;background:rgba(206,172,127,.5)}
+.gift-hero-card strong{font-size:clamp(42px,4vw,68px);line-height:1.02;letter-spacing:-.06em}
+.gift-hero-card small{align-self:flex-end}
+.gift-hero-underlay{position:absolute;z-index:0;inset:7% 0 0 8%;max-width:530px;margin:auto;border:1px solid rgba(137,99,69,.27);transform:translate(14px,15px);pointer-events:none}
+/* reservation: the message reads at first glance; the photo remains cinematic. */
+.reservation-hero{min-height:670px;min-height:90svh;align-items:center;padding-bottom:65px;padding-top:145px}
+.reservation-hero-photo:after{background:linear-gradient(90deg,rgba(6,18,19,.90) 0%,rgba(6,18,19,.66) 46%,rgba(6,18,19,.16) 100%),linear-gradient(0deg,rgba(7,20,21,.55),transparent 60%)}
+.reservation-hero .interior-editorial-heading{margin:0;max-width:1110px}
+.reservation-hero h1{font-size:clamp(80px,9.3vw,166px);line-height:.92;max-width:1000px}
+.reservation-hero h1 em{padding-left:0}
+.reservation-hero .interior-subtitle{max-width:460px;margin-top:35px}
+.interior-hero-action{position:relative;z-index:3;display:inline-flex;gap:28px;align-items:center;border-bottom:1px solid rgba(226,196,151,.7);padding-bottom:12px;margin-top:clamp(30px,5vh,54px);color:#e8d0b0;font:11px/1.4 var(--sans);letter-spacing:.16em}
+.interior-hero-action span{font-size:22px;line-height:1}
+.reservation-booking{scroll-margin-top:82px}
+/* contact: strong editorial rhythm with no artificial indentation. */
+.contact-hero{grid-template-columns:minmax(0,1.06fr) minmax(0,.94fr);gap:clamp(35px,6vw,95px);align-items:center;min-height:700px;min-height:94svh;}
+.contact-hero .interior-editorial-heading{margin:0;max-width:740px}
+.contact-hero .interior-editorial-heading h1{font-size:clamp(78px,8.5vw,152px);line-height:.92;letter-spacing:-.055em;max-width:740px}
+.contact-hero .interior-editorial-heading h1 em{padding-left:0;display:block;font-size:.88em}
+.contact-hero .interior-subtitle{max-width:400px;margin-top:clamp(28px,4.7vh,55px)}
+.contact-photo{min-width:0;align-self:stretch;min-height:425px;max-height:740px;clip-path:inset(0 round 46% 46% 0 0)}
+@media(max-width:1100px){
+ .gift-page-hero{grid-template-columns:1fr;gap:24px;min-height:auto;padding-top:155px;padding-bottom:95px}
+ .gift-page-hero .interior-editorial-heading{max-width:850px}
+ .gift-hero-composition{width:min(100%,660px);margin:0 auto;min-height:380px}
+ .contact-hero{grid-template-columns:minmax(0,1fr) minmax(0,.85fr);gap:34px}
+}
+@media(max-width:760px){
+ .gift-page-hero{display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;padding-top:145px;padding-bottom:75px;gap:40px;min-height:auto}
+ .gift-page-hero .interior-editorial-heading h1{font-size:clamp(70px,12.5vw,101px)}
+ .gift-hero-composition{min-height:310px;width:100%}
+ .gift-hero-card{width:min(100%,530px);min-height:280px;padding:36px}
+ .gift-hero-card strong{font-size:clamp(38px,7vw,55px)}
+ .gift-hero-underlay{inset:4% 2% 0 2%;transform:translate(7px,9px)}
+ .reservation-hero{min-height:690px;min-height:88svh;padding:145px 24px 68px;align-items:center}
+ .reservation-hero h1{font-size:clamp(70px,12.5vw,107px)}
+ .reservation-hero .interior-subtitle{font-size:21px;max-width:360px}
+ .contact-hero{display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:38px;min-height:auto;padding-top:145px;padding-bottom:70px}
+ .contact-hero .interior-editorial-heading h1{font-size:clamp(69px,12.5vw,112px)}
+ .contact-photo{width:100%;height:clamp(290px,50svh,490px);min-height:0;max-height:none;flex:none;margin-top:0;clip-path:inset(0 round 44% 44% 0 0)}
+ .interior-data-disclaimer{margin:12px 0 26px}
+}
+@media(max-width:420px){
+ .gift-page-hero{padding-left:20px;padding-right:20px;gap:25px}
+ .gift-page-hero .interior-editorial-heading h1{font-size:clamp(65px,16.5vw,85px)}
+ .gift-hero-composition{min-height:255px}
+ .gift-hero-card{min-height:250px;padding:26px;width:100%}
+ .gift-hero-card strong{font-size:clamp(34px,9.5vw,42px)}
+ .gift-hero-card>span,.gift-hero-card small{font-size:7px}
+ .reservation-hero h1{font-size:clamp(64px,15vw,79px)}
+ .contact-hero .interior-editorial-heading h1{font-size:clamp(62px,14.8vw,78px)}
+}
+@media(prefers-reduced-motion:reduce){
+ .interior-hero .interior-editorial-heading .interior-eyebrow,
+ .interior-hero .interior-editorial-heading h1,
+ .interior-hero .interior-editorial-heading .interior-subtitle,
+ .interior-hero .interior-hero-action,
+ .interior-hero .menu-hero-photo,.interior-hero .gift-hero-composition,
+ .interior-hero .reservation-hero-photo,.interior-hero .contact-photo{animation:none!important;opacity:1!important;transform:none!important}
+}
+
+
+/* V3.2 — interior hero harmonisation and gift layout alignment. */
+.interior-hero .interior-editorial-heading{margin:0;max-width:680px}
+.interior-hero .interior-editorial-heading .interior-eyebrow{margin-bottom:clamp(20px,4vh,38px)}
+.interior-hero .interior-editorial-heading .interior-subtitle{max-width:400px}
+.menu-page-hero .interior-editorial-heading,
+.gift-page-hero .interior-editorial-heading,
+.reservation-hero .interior-editorial-heading,
+.contact-hero .interior-editorial-heading{align-self:center}
+
+.menu-page-hero{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);align-items:center;gap:clamp(30px,5vw,90px);padding-top:clamp(150px,17vh,215px);padding-bottom:clamp(72px,9vh,115px);min-height:740px;min-height:94svh}
+.menu-page-hero h1{font-size:clamp(79px,8.5vw,154px);line-height:.91;max-width:760px}
+.menu-page-hero h1 em{padding-left:0}
+.menu-page-hero .interior-subtitle{max-width:390px}
+.menu-hero-bottom{left:clamp(24px,7vw,120px);right:clamp(24px,7vw,120px)}
+
+.gift-page-hero{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(30px,5vw,84px)}
+.gift-intro{display:flex;flex-direction:column;align-items:center;text-align:center;gap:20px;padding-bottom:80px}
+.gift-intro .interior-eyebrow{margin:0;color:#8f7158}
+.gift-intro h2{margin-top:0;font-size:clamp(72px,8vw,138px)}
+.gift-intro>p{max-width:690px;margin:0 auto;font:clamp(20px,1.9vw,31px)/1.45 var(--serif);color:#6c5c4c;justify-self:auto}
+.gift-ending p em{display:block}
+
+.reservation-hero{grid-template-columns:minmax(0,.96fr) minmax(0,1.04fr);gap:clamp(34px,6vw,92px);align-items:center;min-height:740px;min-height:92svh;padding-top:clamp(150px,17vh,215px);padding-bottom:clamp(72px,9vh,115px)}
+.reservation-hero .interior-editorial-heading{max-width:700px}
+.reservation-hero h1{font-size:clamp(79px,8.5vw,154px);line-height:.91;max-width:700px}
+.reservation-hero .interior-subtitle{max-width:390px}
+.reservation-hero-photo{order:2}
+.reservation-hero-text{order:1;position:relative;z-index:2}
+
+.contact-hero{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(34px,6vw,92px);align-items:center;min-height:740px;min-height:92svh;padding-top:clamp(150px,17vh,215px);padding-bottom:clamp(72px,9vh,115px)}
+.contact-hero .interior-editorial-heading{max-width:700px}
+.contact-hero .interior-editorial-heading h1{font-size:clamp(79px,8.5vw,154px);line-height:.91;max-width:700px}
+.contact-hero .interior-editorial-heading h1 em{padding-left:0}
+.contact-hero .interior-subtitle{max-width:390px}
+.contact-photo{clip-path:inset(0 round 42% 42% 0 0)}
+
+@media(max-width:1100px){
+  .menu-page-hero,.gift-page-hero,.reservation-hero,.contact-hero{grid-template-columns:1fr;min-height:auto}
+  .menu-page-hero .interior-editorial-heading,
+  .gift-page-hero .interior-editorial-heading,
+  .reservation-hero .interior-editorial-heading,
+  .contact-hero .interior-editorial-heading{max-width:850px}
+  .menu-hero-photo{width:50%}
+  .reservation-hero-photo{order:0}
+}
+@media(max-width:760px){
+  .menu-page-hero{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding-top:145px;padding-bottom:70px;min-height:700px}
+  .menu-page-hero h1,.gift-page-hero .interior-editorial-heading h1,.reservation-hero h1,.contact-hero .interior-editorial-heading h1{font-size:clamp(70px,12.5vw,104px)}
+  .gift-intro h2{font-size:clamp(62px,11vw,100px)}
+  .gift-intro>p{font-size:clamp(18px,5.5vw,24px);max-width:560px}
+  .reservation-hero,.contact-hero{display:flex;flex-direction:column;justify-content:flex-start;align-items:stretch;padding-top:145px;padding-bottom:70px;gap:36px;min-height:auto}
+  .reservation-hero-photo,.contact-photo{width:100%;height:clamp(290px,50svh,490px);min-height:0;max-height:none;flex:none}
+  .reservation-hero-photo{order:0}
+  .contact-photo{margin-top:0;clip-path:inset(0 round 44% 44% 0 0)}
+}
+@media(max-width:420px){
+  .gift-intro{gap:16px}
+  .gift-intro>p{font-size:17px}
+  .menu-page-hero h1,.gift-page-hero .interior-editorial-heading h1,.reservation-hero h1,.contact-hero .interior-editorial-heading h1{font-size:clamp(62px,15vw,84px)}
+}
