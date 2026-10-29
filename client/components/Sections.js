@@ -50,14 +50,14 @@ export function Ritual({ lenisRef }) {
         <div className="ritual-kitchen-shade" aria-hidden="true" />
         <div className="ritual-plate-portal"><Photo name="dark-plate" className="ritual-photo ritual-plate" alt="Assiette gastronomique, photographie d'ambiance illustrative" eager /><div className="ritual-plate-shade" aria-hidden="true" /></div>
         <span className="ritual-fixed-caption">LE FLORENTIN <i /> MOISSAC</span>
-        <div className="ritual-first ritual-copy">
+        <div className="ritual-copy-position ritual-first-position"><div className="ritual-first ritual-copy">
           <span className="ritual-index">02 / LE GESTE</span><p className="ritual-script">Au plus près du geste.</p><h2 id="craft-title">La cuisine<br/><em>en vérité.</em></h2>
           <p className="ritual-lead">La précision d’une main.<br/>Le respect d’un produit.</p>
-        </div>
-        <div className="ritual-second ritual-copy">
+        </div></div>
+        <div className="ritual-copy-position ritual-second-position"><div className="ritual-second ritual-copy">
           <span className="ritual-index">03 / L’INSTANT</span><p className="ritual-script">Puis vient l’émotion.</p><h2>Le plaisir<br/><em>se compose.</em></h2>
           <p className="ritual-lead">Les saveurs se rencontrent.<br/>Le temps se suspend.</p>
-        </div>
+        </div></div>
         <div className="ritual-progress" aria-hidden="true"><span className="ritual-progress-fill" /></div>
         <span className="ritual-edge-label" aria-hidden="true">DU GESTE À L’ASSIETTE</span>
       </div>
