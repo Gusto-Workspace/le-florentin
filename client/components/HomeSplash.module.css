@@ -1,0 +1,78 @@
+.screen {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: grid;
+  place-items: center;
+  background: #0e1d1e;
+  pointer-events: auto;
+  touch-action: none;
+}
+
+.plaque {
+  --plaque-height: min(380px, 65svh, 110vw);
+  position: relative;
+  height: var(--plaque-height);
+  aspect-ratio: .71;
+  border: 1px solid #bea080;
+  border-radius: 999px 999px 4px 4px;
+  box-shadow: 0 0 0 9px #132223, 0 0 0 10px rgba(202, 159, 118, .34);
+  background: radial-gradient(ellipse at 50% 39%, rgba(166, 111, 72, .28), transparent 65%),
+    linear-gradient(140deg, #313a36, #0c1d1f);
+  overflow: hidden;
+  opacity: 0;
+}
+
+.plaque::before {
+  content: '';
+  position: absolute;
+  inset: 12px;
+  border: 1px solid rgba(210, 166, 125, .37);
+  border-radius: 999px 999px 3px 3px;
+}
+
+.plaque::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-conic-gradient(from 0deg at 50% 70%, transparent 0 9deg,
+    rgba(212, 160, 113, .09) 9deg 9.1deg, transparent 9.1deg 16deg);
+  opacity: .7;
+}
+
+.signature {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.over {
+  font: calc(var(--plaque-height) * .017) var(--sans);
+  letter-spacing: .23em;
+  color: #c6a88a;
+}
+
+.letter {
+  font: 400 calc(var(--plaque-height) * .53)/.97 var(--serif);
+  color: #e2c1a0;
+  letter-spacing: -.13em;
+  margin: calc(var(--plaque-height) * .038) calc(var(--plaque-height) * .032)
+    calc(var(--plaque-height) * .036) 0;
+}
+
+.name {
+  font: calc(var(--plaque-height) * .049) var(--serif);
+  letter-spacing: .18em;
+  color: #f2e5d5;
+}
+
+.city {
+  font: calc(var(--plaque-height) * .019) var(--sans);
+  letter-spacing: .22em;
+  color: #bea184;
+  margin-top: calc(var(--plaque-height) * .026);
+}

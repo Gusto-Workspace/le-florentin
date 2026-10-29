@@ -15,7 +15,7 @@ export function scrollToTarget(target, lenisRef) {
 }
 
 /** One Lenis RAF driven by GSAP; all scene triggers scoped and reverted on unmount. */
-export default function Experience({ rootRef, lenisRef, menuOpen }) {
+export default function Experience({ rootRef, lenisRef, menuOpen, introActive = false, introDelay = 0 }) {
   useEffect(() => {
     const root = rootRef.current;
     if (!root) return;
@@ -43,8 +43,8 @@ export default function Experience({ rootRef, lenisRef, menuOpen }) {
         const ritualJourney = q('.ritual-journey')[0];
         const ritualScroll = q('.ritual-scroll-spacer')[0];
 
-        gsap.fromTo(q('.hero-heading'), { autoAlpha: 0, y: 28 }, { autoAlpha: 1, y: 0, duration: 1.25, ease: 'power3.out', delay: 0.1 });
-        gsap.fromTo(q('.hero-intro, .hero-caption, .hero-instruction'), { autoAlpha: 0 }, { autoAlpha: 1, stagger: 0.12, duration: 0.8, delay: 0.55 });
+        gsap.fromTo(q('.hero-heading'), { autoAlpha: 0, y: 28 }, { autoAlpha: 1, y: 0, duration: 1.25, ease: 'power3.out', delay: introDelay + 0.1 });
+        gsap.fromTo(q('.hero-intro, .hero-caption, .hero-instruction'), { autoAlpha: 0 }, { autoAlpha: 1, stagger: 0.12, duration: 0.8, delay: introDelay + 0.55 });
 
         q('[data-reveal]').forEach(el => {
           gsap.fromTo(el, { autoAlpha: 0, y: 29 }, {
@@ -148,11 +148,11 @@ export default function Experience({ rootRef, lenisRef, menuOpen }) {
       if (lenis) { lenis.off('scroll', ScrollTrigger.update); lenis.destroy(); }
       lenisRef.current = null;
     };
-  }, [rootRef, lenisRef]);
+  }, [rootRef, lenisRef, introDelay]);
 
   useEffect(() => {
     if (!lenisRef.current) return;
-    if (menuOpen) lenisRef.current.stop(); else lenisRef.current.start();
-  }, [menuOpen, lenisRef]);
+    if (menuOpen || introActive) lenisRef.current.stop(); else lenisRef.current.start();
+  }, [menuOpen, introActive, lenisRef]);
   return null;
 }
