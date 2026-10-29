@@ -1,6 +1,8 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { scrollToTarget } from './Experience';
+import DiagonalArrow from './DiagonalArrow';
+import Photo from './Photo';
 
 const chapters = [
   { name: <>La <em>maison</em></>, label: 'La maison', id: 'maison' },
@@ -18,7 +20,7 @@ function HeaderBar({ expanded = false, buttonRef, onToggle, onBrand, inertHeader
         <span className="brand-mark">LF</span><span className="brand-meta"><b>LE FLORENTIN</b><small>MOISSAC · FRANCE</small></span>
       </a>
       <div className="header-actions">
-        <a className="header-book" href={interior ? "/reservations" : "tel:+33563041918"}>RÉSERVER <span aria-hidden="true">↗</span></a>
+        <a className="header-book" href={interior ? "/reservations" : "tel:+33563041918"}>RÉSERVER <DiagonalArrow /></a>
         <button type="button" className={`nav-toggle${expanded ? ' nav-toggle-close' : ''}`} ref={buttonRef}
           onClick={onToggle} aria-label={expanded ? 'Fermer le menu' : 'Ouvrir le menu'}
           aria-expanded={expanded} aria-controls="menu-florentin">
@@ -117,18 +119,18 @@ export default function Navigation({ open, setOpen, lenisRef, interior = false }
             <p className="menu-chapter-label">LE FLORENTIN / SOMMAIRE <span>01 — 05</span></p>
             <nav className="menu-chapters" aria-label="Chapitres de la page">
               {chapters.map((chapter, index) => interior ? (
-                <a key={chapter.label} className="nav-chapter" href={['/', '/menus', '/gift-cards', '/reservations', '/contact'][index]} onClick={() => setOpen(false)}><span className="menu-number">0{index + 1}</span><span className="chapter-word">{chapter.name}</span><span className="chapter-arrow" aria-hidden="true">↗</span></a>
+                <a key={chapter.label} className="nav-chapter" href={['/', '/menus', '/gift-cards', '/reservations', '/contact'][index]} onClick={() => setOpen(false)}><span className="menu-number">0{index + 1}</span><span className="chapter-word">{chapter.name}</span><DiagonalArrow className="chapter-arrow" /></a>
               ) : chapter.pageHref ? (
-                <a key={chapter.label} className="nav-chapter" href={chapter.pageHref} onClick={() => setOpen(false)}><span className="menu-number">0{index + 1}</span><span className="chapter-word">{chapter.name}</span><span className="chapter-arrow" aria-hidden="true">↗</span></a>
+                <a key={chapter.label} className="nav-chapter" href={chapter.pageHref} onClick={() => setOpen(false)}><span className="menu-number">0{index + 1}</span><span className="chapter-word">{chapter.name}</span><DiagonalArrow className="chapter-arrow" /></a>
               ) : chapter.href ? (
-                <a key={chapter.label} className="nav-chapter" href={chapter.href} onClick={() => setOpen(false)}><span className="menu-number">0{index + 1}</span><span className="chapter-word">{chapter.name}</span><span className="chapter-arrow" aria-hidden="true">↗</span></a>
+                <a key={chapter.label} className="nav-chapter" href={chapter.href} onClick={() => setOpen(false)}><span className="menu-number">0{index + 1}</span><span className="chapter-word">{chapter.name}</span><DiagonalArrow className="chapter-arrow" /></a>
               ) : (
-                <a key={chapter.label} className="nav-chapter" href={`#${chapter.id}`} onClick={(event) => { event.preventDefault(); goTo(chapter.id); }}><span className="menu-number">0{index + 1}</span><span className="chapter-word">{chapter.name}</span><span className="chapter-arrow" aria-hidden="true">↗</span></a>
+                <a key={chapter.label} className="nav-chapter" href={`#${chapter.id}`} onClick={(event) => { event.preventDefault(); goTo(chapter.id); }}><span className="menu-number">0{index + 1}</span><span className="chapter-word">{chapter.name}</span><DiagonalArrow className="chapter-arrow" /></a>
               ))}
             </nav>
-            <div className="menu-directory-bottom"><p>Une adresse où l’on prend le temps.</p><a href={interior ? "/reservations" : "tel:+33563041918"} onClick={() => setOpen(false)}>RÉSERVER UNE TABLE <span aria-hidden="true">↗</span></a></div>
+            <div className="menu-directory-bottom"><p>Une adresse où l’on prend le temps.</p><a href={interior ? "/reservations" : "tel:+33563041918"} onClick={() => setOpen(false)}>RÉSERVER UNE TABLE <DiagonalArrow /></a></div>
           </div>
-          <aside className="menu-cabinet" aria-label="Signature artistique du Florentin"><div className="menu-cabinet-inner"><p className="cabinet-top">UNE INVITATION À ENTRER</p><div className="nav-plaque"><div className="plaque-inner"><span className="plaque-over">L’ART DE RECEVOIR</span><span className="plaque-letter">F</span><span className="plaque-name">LE FLORENTIN</span><span className="plaque-city">MOISSAC · SUD-OUEST</span></div></div><p className="cabinet-poem">Le temps d’un dîner,<br/><em>oublier le temps.</em></p><p className="cabinet-bottom">8, PLACE ROGER-DELTHIL <span>82200 MOISSAC</span></p></div></aside>
+          <aside className="menu-cabinet" aria-label="Signature artistique du Florentin"><div className="menu-cabinet-inner"><p className="cabinet-top">UNE INVITATION À ENTRER</p><div className="nav-plaque"><div className="plaque-inner"><Photo className="plaque-photo" name="night-interior" alt=""/><span className="plaque-over">L’ART DE RECEVOIR</span><span className="plaque-name">LE FLORENTIN</span><span className="plaque-city">MOISSAC · SUD-OUEST</span></div></div><p className="cabinet-poem">Le temps d’un dîner,<br/><em>oublier le temps.</em></p><p className="cabinet-bottom">8, PLACE ROGER-DELTHIL <span>82200 MOISSAC</span></p></div></aside>
         </div>
         <div className="menu-footer"><span>LE FLORENTIN</span><span>LE GOÛT DES INSTANTS RARES</span></div>
       </div>

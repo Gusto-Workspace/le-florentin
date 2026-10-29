@@ -2,6 +2,7 @@ import { motion } from 'motion/react';
 import Photo from './Photo';
 import ScrollReveal from './external/react-bits/ScrollReveal';
 import { scrollToTarget } from './Experience';
+import DiagonalArrow from './DiagonalArrow';
 
 export function Hero({ lenisRef }) {
   return <section className="hero" aria-labelledby="hero-title">
@@ -22,7 +23,7 @@ export function Maison() {
     <div className="page-rail" aria-hidden="true"/><div className="section-index">01 <span>—</span> LA MAISON</div>
     <div className="maison-lead" data-reveal><p className="eyebrow">LE TEMPS D’UN MOMENT</p><h2 id="maison-title">Il est des lieux<br/>qui donnent envie<br/><em>de rester.</em></h2></div>
     <div className="maison-layout">
-      <div className="maison-copy" data-reveal><p className="dropcap">À Moissac, un repas devient une parenthèse. Une manière de ralentir, de savourer, de s’offrir ce luxe simple : être ensemble.</p><a className="text-link" href="#cuisine">DÉCOUVRIR NOTRE CUISINE <span aria-hidden="true">↗</span></a><span className="maison-vertical">MOISSAC / SUD-OUEST</span></div>
+      <div className="maison-copy" data-reveal><p className="dropcap">À Moissac, un repas devient une parenthèse. Une manière de ralentir, de savourer, de s’offrir ce luxe simple : être ensemble.</p><a className="text-link" href="#cuisine">DÉCOUVRIR NOTRE CUISINE <span><DiagonalArrow /></span></a><span className="maison-vertical">MOISSAC / SUD-OUEST</span></div>
       <div className="maison-images"><figure className="maison-portrait"><div className="parallax-wrap"><Photo name="wine-pouring" alt="Vin servi à table, photographie d'ambiance illustrative" data-parallax="9" /></div><figcaption>01 / LE TEMPS DU PARTAGE</figcaption></figure><figure className="maison-small"><Photo name="warm-room" alt="Salle chaleureuse de restaurant, photographie illustrative"/><figcaption>02 / L’ART DE RECEVOIR</figcaption></figure></div>
     </div>
     <p className="maison-last-word" aria-hidden="true">Prendre le temps.</p>
@@ -67,15 +68,15 @@ export function Ritual({ lenisRef }) {
       <span className="eyebrow" data-reveal>À LA TABLE DU FLORENTIN</span>
       <h2 data-reveal>Ce qui compte,<br/>c’est <em>l’instant.</em></h2>
       <p data-reveal>Une cuisine à découvrir, des moments à partager. Le plaisir de se retrouver autour d’une table.</p>
-      <button className="text-link" onClick={() => scrollToTarget('#contact', lenisRef)}>VENIR AU FLORENTIN <span aria-hidden="true">↗</span></button>
+      <button className="text-link" onClick={() => scrollToTarget('#contact', lenisRef)}>VENIR AU FLORENTIN <span><DiagonalArrow /></span></button>
     </section>
   </div>;
 }
 
 export function Invitation() {
-  return <section className="invitation" id="contact" aria-labelledby="invitation-title"><div className="invitation-corner invitation-corner-a" aria-hidden="true"/><div className="invitation-corner invitation-corner-b" aria-hidden="true"/><span className="invitation-index" data-reveal>LE FLORENTIN / MOISSAC</span><p className="invitation-before" data-reveal>À présent, il ne reste qu’à se rencontrer.</p><h2 id="invitation-title" data-reveal>À très <em>bientôt</em><br/>à notre table.</h2><motion.a className="invitation-cta" href="tel:+33563041918" whileHover={{ scale: 1.035 }} whileTap={{ scale: 0.97 }} transition={{ type: 'spring', stiffness: 270, damping: 20 }}><span>RÉSERVER PAR TÉLÉPHONE</span><span aria-hidden="true">↗</span></motion.a><p className="invitation-address">8 place Roger-Delthil · 82200 Moissac<br/><a href="tel:+33563041918">05 63 04 19 18</a></p><p className="invitation-footnote">PHOTOGRAPHIES D’AMBIANCE NON CONTRACTUELLES</p></section>;
+  return <section className="invitation" id="contact" aria-labelledby="invitation-title"><div className="invitation-corner invitation-corner-a" aria-hidden="true"/><div className="invitation-corner invitation-corner-b" aria-hidden="true"/><span className="invitation-index" data-reveal>LE FLORENTIN / MOISSAC</span><p className="invitation-before" data-reveal>À présent, il ne reste qu’à se rencontrer.</p><h2 id="invitation-title" data-reveal>À très <em>bientôt</em><br/>à notre table.</h2><motion.a className="invitation-cta" href="tel:+33563041918" whileHover={{ scale: 1.035 }} whileTap={{ scale: 0.97 }} transition={{ type: 'spring', stiffness: 270, damping: 20 }}><span>RÉSERVER PAR TÉLÉPHONE</span><span><DiagonalArrow /></span></motion.a><p className="invitation-address">8 place Roger-Delthil · 82200 Moissac<br/><a href="tel:+33563041918">05 63 04 19 18</a></p><p className="invitation-footnote">PHOTOGRAPHIES D’AMBIANCE NON CONTRACTUELLES</p></section>;
 }
 
 export function Footer({ lenisRef }) {
-  return <footer className="site-footer"><div className="footer-top"><span className="footer-wordmark">Le Florentin</span><button className="footer-toplink" onClick={() => scrollToTarget('#haut', lenisRef)}>REMONTER <span aria-hidden="true">↑</span></button></div><div className="footer-middle"><span>RESTAURANT GASTRONOMIQUE<br/>MOISSAC · FRANCE</span><span>LE GOÛT DES INSTANTS RARES</span><a href="tel:+33563041918">NOUS APPELER ↗</a></div><div className="footer-bottom"><span>© LE FLORENTIN — CONCEPT DIGITAL</span><span>CRÉATION GUSTO</span></div></footer>;
+  return <footer className="site-footer"><div className="footer-top"><span className="footer-wordmark">Le Florentin</span><button className="footer-toplink" onClick={() => scrollToTarget('#haut', lenisRef)}>REMONTER <span aria-hidden="true">↑</span></button></div><div className="footer-middle"><span>RESTAURANT GASTRONOMIQUE<br/>MOISSAC · FRANCE</span><span>LE GOÛT DES INSTANTS RARES</span><a href="tel:+33563041918">NOUS APPELER <DiagonalArrow /></a></div><div className="footer-bottom"><span>© LE FLORENTIN — CONCEPT DIGITAL</span><span>CRÉATION GUSTO</span></div></footer>;
 }

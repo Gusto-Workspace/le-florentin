@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { useRef, useState } from 'react';
 import Navigation from '../Navigation';
+import DiagonalArrow from '../DiagonalArrow';
 
 const routes = [
   { href: '/', title: 'La maison' },
@@ -33,7 +34,7 @@ export default function InteriorShell({ page, title, description, children, them
     <main id="interior-content" className={`interior-page interior-${page} interior-theme-${theme}`} inert={menuOpen} aria-hidden={menuOpen}>
       {children}
       <footer className="interior-footer">
-        <div className="interior-footer-top"><p>Le Florentin</p><span>MOISSAC · FRANCE</span><Link href="/reservations">LE TEMPS D’UNE TABLE <span aria-hidden="true">↗</span></Link></div>
+        <div className="interior-footer-top"><p>Le Florentin</p><span>MOISSAC · FRANCE</span><Link href="/reservations">LE TEMPS D’UNE TABLE <DiagonalArrow /></Link></div>
         <nav aria-label="Navigation de bas de page">{routes.map(route => <Link key={route.href} href={route.href} aria-current={route.href === '/' + page ? 'page' : undefined}>{route.title}</Link>)}</nav>
         <div className="interior-footer-bottom"><span>© LE FLORENTIN</span><span>PHOTOGRAPHIES D’AMBIANCE NON CONTRACTUELLES</span><span>CRÉATION GUSTO</span></div>
       </footer>

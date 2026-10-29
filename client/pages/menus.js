@@ -5,6 +5,7 @@ import { CatalogLoading, CatalogEmpty, CatalogError } from '../components/interi
 import { useCatalog } from '../components/interior/useCatalog';
 import { loadMenuCatalog } from '../lib/content/catalog.mjs';
 import Photo from '../components/Photo';
+import DiagonalArrow from '../components/DiagonalArrow';
 
 const money = value => value === null || value === undefined || value === '' ? null : new Intl.NumberFormat('fr-FR', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 }).format(Number(value));
 function DishRow({ dish, index }) {
@@ -43,6 +44,6 @@ export default function Menus() {
         {data.categories.length > 0 ? <div className="menu-reading-layout"><aside className="menu-side-index" aria-label="Catégories de la carte"><p>CHAPITRES</p>{data.categories.map((cat, index) => <a key={cat.id} href={`#carte-${cat.id}`}><span>{String(index + 1).padStart(2, '0')}</span>{cat.subtitle || cat.name}</a>)}<div className="menu-side-ornament" aria-hidden="true">F</div></aside><div className="menu-category-stack">{data.categories.map((cat, index) => <Category key={cat.id} category={cat} index={index}/>)}</div></div> : <CatalogEmpty label="Aucune rubrique à présenter pour le moment."/>}
       </>}
     </section>
-    <section className="interior-outro menu-page-outro"><div className="outro-photo"><Photo name="wine-pouring" alt="Service du vin, illustration d’ambiance"/></div><div className="outro-copy"><span className="interior-eyebrow">POUR PROLONGER LE PLAISIR</span><h2>Il ne reste<br/>qu’à <em>se rencontrer.</em></h2><Link href="/reservations" className="interior-primary-link">ENVISAGER UNE TABLE <span aria-hidden="true">↗</span></Link></div></section>
+    <section className="interior-outro menu-page-outro"><div className="outro-photo"><Photo name="wine-pouring" alt="Service du vin, illustration d’ambiance"/></div><div className="outro-copy"><span className="interior-eyebrow">POUR PROLONGER LE PLAISIR</span><h2>Il ne reste<br/>qu’à <em>se rencontrer.</em></h2><Link href="/reservations" className="interior-primary-link">ENVISAGER UNE TABLE <DiagonalArrow /></Link></div></section>
   </InteriorShell>;
 }
